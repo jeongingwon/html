@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변형과 전환</title>
+    <style>
+      .parent {
+        margin: 0 20px;
+        /*왼쪽과 오른쪽 마진을 20px로 설정*/
+        background-color: lightcoral;
+        width: 200px;
+      }
+      .child {
+        width: 150px;
+        height: 150px;
+        background-color: teal;
+      }
+      .parent:nth-child(1) > .child {
+        transform: translate(30px, 50px);
+      }
+      .parent:nth-child(2) > .child {
+        transform: scale(1.2, 0.8);
+      }
+
+      .parent:nth-child(3) > .child {
+        transform: skew(45deg);
+      }
+
+      .parent:nth-child(4) > .child {
+        transform: rotate(45deg);
+      }
+      /*parent 부모 tag의 1번째 자식 tag 거기에 child클래스 선택
+      translate(x축으로30px y축으로50px 위치 이동
+      scale(x축에1.2배y축에0.8배
+      skew(각도) : 각도만큼 왜곡(비트는것) 45만큼 비틈
+      rotate(각도) : 각도만큼 회전 (시계방향) 45도만큼 시계방향으로 회전
+      deg: degree: 정도,각도*/
+      .parent:nth-child(4) > .child:hover {
+        width: 300px;
+        height: 300px;
+        background-color: orange;
+        /*transition: background-color 2s 0s linear;*/
+        transition: background-color 2s 0s linear, height 2s 0s linear;
+      }
+      .parent:nth-child(1) > .child:hover {
+        width: 300px;
+        height: 300px;
+        background-color: yellowgreen;
+        transition-property: width;
+        transition-duration: 5s;
+        transition-delay: 1s;
+        /*duration과 delay활용, 애니메이션 효과*/
+        /*    transition-timing-function: linear;*/
+        /*transition-timing-function: ease;*/
+        /*transition-timing-function: ease-out;*/
+        transition-timing-function: ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>

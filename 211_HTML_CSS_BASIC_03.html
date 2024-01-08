@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자 알아보기</title>
+    <style>
+      /*기호와 함께 사용하는 속성 선택자
+              *:값의 포함여부
+              ^:값의 시작여부
+              $:값의 끝 여부
+              */
+      img[alt] {
+        border: 5px dashed red;
+      }
+      /*alt속성이 있는 모든 이미지 요소에 빨간색 점선 경계선 적용*/
+      /*img[width] {
+              border: 5px dashed blue;
+            }
+            /*width속성이 있는 모든 이미지 요소에 파란색 점선 경계선 적용*/
+      /*img[width*="2"] {
+              border: 5px dashed pink;
+            }
+            /*width 속성값에 '2'가 포함된 모든 이미지 요소에 분홍색 점선 경계선 적용
+            width 값이 200px 또는 20% 등 '2' 가 포함된 경우에 적용*/
+      /*img[width^="1"] {
+              border: 5px dashed blue;
+            }
+            /*width 속성값에 '1'가 포함된 모든 이미지 요소에 파란색 점선 경계선 적용
+            width 값이 100px 또는 10% 등 '1' 가 시작된 경우에 적용*/
+      /*    img[width$="0"] {
+        border: 5px dashed violet;
+      }
+      /*width 속성값에 '0'가 포함된 모든 이미지 요소에 보라색 점선 경계선 적용
+            width 값이 120px  등 '0' 로 끝나는 경우에 적용*/
+
+      body p {
+        color: blue;
+      }
+
+      /*body 요소 안에있는 모든 <p> tag 내부 텍스트를  파란색으로 변경*/
+
+      body em {
+        color: tomato;
+      }
+      /*body 요소 안에있는 모든 <p> tag 내부 텍스트를
+                오렌지색으로 변경
+                <em>텍스트는 강조택그*/
+      p > em {
+        color: yellowgreen;
+      }
+      /* '>' : 자식태그: 한 단계 아래에 있는 요소 선택*/
+      /*
+      #three + p {
+        color: red;
+      }
+*/
+      /*id 가 three인 요소 다음에 나오는
+첫번째 p태그 내부 텍스트를 레드로 변경*/
+
+      #three ~ p {
+        color: darkgray;
+      } /*id가 three인 요소 뒤에나오는 모든 p태그 내부 텍스트를 어두운 회색으로 변경*/
+
+      #four ~ p {
+        color: blue;
+      }
+
+      body mark {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img/pic.jpg" width="120" alt="Galaxy" id="three" />
+
+    <!-- <img src="./sun.jpg" width="120" alt="sun" />-->
+    <!--alt 이미지가 안나올때 대체 메세지-->
+    <p id="one">보라빛 우주</p>
+    <p id="two">참 맑기도 하다</p>
+    <p>널 떼러 <em>가는길</em></p>
+    <hr />
+    <img src="img/img.jpg" width="120" alt="sky" id="four" />
+    <p>파스텔 컬러를 보면</p>
+    <p>마음이 <mark>편안</mark>해집니다.</p>
+    <p>믿거나, 말거나</p>
+  </body>
+</html>

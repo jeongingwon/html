@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      body {
+        height: 500px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+      }
+      /*화면에 맞게 반응형 배치됨*/
+      main {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        position: relative;
+        /*relative : main 요소를 상대적 위치로 설정(absolute의 기준점)*/
+      }
+      div {
+        width: 50px;
+        height: 50px;
+        background-color: tomato;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        /*absolute는 상위 요소인 relative를 기준으로 배치*/
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>HPE</div>
+    </main>
+  </body>
+</html>

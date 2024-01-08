@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경 설정</title>
+    <style>
+      div {
+        width: 600px;
+        height: 600px;
+        border: 20px double green;
+        padding: 20px;
+
+        background-color: pink;
+        /*background-clip: border-box;*/
+        /*background-clip: padding-box;*/
+        background-clip: content-box;
+        /*배경의 적용 범위: color는 clip으로 범위를 정해줌*/
+        background-image: url(img/pic.img);
+        background-size: 250px 250px;
+        /*background-size 맞추어 주기*/
+        /*size를 줄였더니 >> 교차 효과 발생*/
+        background-repeat: no-repeat;
+        /*교차효과 제거하고 싶을때 */
+        /*background-repeat: repeat-x;*/
+        /*x방향으로 repeat하고 싶을 때 */
+        /*background-repeat: repeat-y;*/
+        /*y방향으로 repeat하고 싶을 때 */
+        /*background-origin: padding-box;*/
+        /*background-origin: content-box;*/
+        background-origin: border-box;
+        /*img는 origin 어디서부터 시작할 지 정해줌*/
+        background-position: center;
+        /*center top left right bottom*/
+        /*background-position: 100px 50px;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div>배경을 설정해 볼게요.</div>
+  </body>
+</html>

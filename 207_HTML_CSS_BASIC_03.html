@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소의 유형</title>
+    <style>
+      /*  p {
+        display: inline;
+        width: 100px;
+        height: 100px;
+      }*/
+      /*p {
+        display: block;
+        width: 100px;
+        height: 100px;
+      }*/
+      /*inline 적용안됨*/
+      p {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+      /*inline-block
+      요소(element) 공간 차지: inline
+      크기 지정(width,height) 사용가능
+      */
+      /*
+      p {
+        display: none;
+        width: 100px;
+        height: 100px;
+      }
+      */
+      /* 화면 상에서는 안 보임 */
+
+      span {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>정치</p>
+    <p>경제</p>
+    <p>사회</p>
+    <p>문화/생활</p>
+    <span> 하하 여기는 서울</span>
+  </body>
+</html>

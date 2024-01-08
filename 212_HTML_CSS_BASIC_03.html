@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>의사 클래스</title>
+    <style>
+      .menu {
+        padding: 10px;
+        border-bottom: 1px solid black;
+      }
+
+      .menu > li {
+        display: inline-block;
+        text-align: center;
+      }
+      li > a {
+        display: inline-block;
+        width: 80px;
+        padding: 10px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        background-color: gray;
+      }
+      a:active {
+        color: white;
+        background-color: red;
+      }
+      /*      li:nth-child(2n) {
+        font-size: 20px;
+      }
+  */
+      /*의사 클래스*/
+
+      /*n(모든수) 에 대해 20px적용됨*/
+
+      li:nth-child(2n) {
+        font: 20px;
+      } /*li:nth-child(2n)>> 짝수만 적용됨*/
+      /*의사요소*/
+      a::first-letter {
+        color: red;
+      }
+      a::after {
+        content: "보기";
+        color: blue;
+      }
+      /*콘텐츠 뒤에 콘텐츠 및 스타일링 추가*/
+      a::before {
+        content: "우리함께~";
+        color: blueviolet;
+      }
+      /*콘텐츠 앞에 콘텐츠 및 스타일링 추가*/
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="#">사전</a></li>
+      <li><a href="#">뉴스</a></li>
+      <li><a href="#">증권</a></li>
+      <li><a href="#">지도</a></li>
+      <!--"#": 실제로는 어디로 이동하지 않는 더미 링크-->
+    </ul>
+  </body>
+</html>

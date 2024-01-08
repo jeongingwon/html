@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>설문조사 양식</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>설문조사 양식</h1>
+      <p>모든 항목에 빠짐없이 체크해주세요.</p>
+    </header>
+    <hr />
+    <main>
+      <form>
+        <fieldset>
+          <legend>개인정보</legend>
+          <label for="name">성함</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="성함을 입력하세요"
+          />
+          <br />
+          <label for="email">이메일 주소</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="이메일주소를 입력해주세요"
+          />
+          <br />
+
+        </fieldset>
+        <br>
+        <hr>
+          <br />
+
+          <legend>설문</legend>
+
+          <p>1. 연령대가 어떻게 되십니까?</p>
+          <input type="radio" id="teen" name="age" />
+          <label for="teen">10대</label>
+          <input type="radio" id="twnety" name="age" />
+          <label for="twnety">20대</label>
+          <input type="radio" id="thirty" name="age" />
+          <label for="thirty">10대</label>
+          <input type="radio" id="fourty" name="age" />
+          <label for="fourty">10대</label>
+          <input type="radio" id="fifty" name="age" />
+          <label for="fifty">10대</label>
+
+          <p>2. 무슨 프로그래밍 언어를 공부하시고 있나요?</p>
+          <input type="checkbox" id="python" name="programing_lang" />
+          <label for="lang">파이썬</label>
+          <input type="checkbox" id="html_css" name="programing_lang" />
+          <label for="lang">html_css</label>
+          <input type="checkbox" id="react" name="programing_lang" />
+          <label for="lang">리액트</label>
+          <input type="checkbox" id="javascript" name="programing_lang" />
+          <label for="lang">자바스크립트</label>
+
+          <p>
+            3. 귀하의 MBTI는 어떻게 되십니까? 해당하는 성격유형을 각각
+            골라주세요.
+          </p>
+          <input type="radio" id="E" name="mbti_1st" />
+          <label for="E(Extraversion)">외향적</label>
+          <input type="radio" id="I" name="mbti_1st" />
+          <label for="I(Introversion)">내향적</label>
+          <br />
+
+          <input type="radio" id="S" name="mbti_2nd" />
+          <label for="S(Sensing)">감각적</label>
+          <input type="radio" id="N" name="mbti_2nd" />
+          <label for="N(Intuition)">직관적</label>
+          <br />
+          <input type="radio" id="T" name="mbti_3rd" />
+          <label for="T(Thinking)">사고적</label>
+          <input type="radio" id="F" name="mbti_3rd" />
+          <label for="F(Feeling)">감정적</label>
+          <br />
+          <input type="radio" id="J" name="mbti_4th" />
+          <label for="J(Judging)">판단적</label>
+          <input type="radio" id="P" name="mbti_4th" />
+          <label for="P(Perceving)">인식적</label>
+          <br />
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>기타의견</legend>
+        <textarea rows="3" cols="60"   name="comment"></textarea>
+        </fieldset>
+        <input type="submit">
+
+      </form>
+    </main>
+    <hr>
+    <footer>
+        <p>수고하셨습니다</p>
+    </footer>
+  </body>
+</html>
