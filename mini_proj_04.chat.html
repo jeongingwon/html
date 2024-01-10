@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>채팅창</title>
+    <link href="chat.css" rel="stylesheet" />
+    <link
+      href="text.css"
+      rel="stylesheet"
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <main class="chatscreen">
+        <!--main : semantic tag (의미적 태그)-->
+        <section class="chatscreen bar">
+          <!--사용자 정보-->
+          <div class="user">
+            <div class="user_columm">
+              <div class="user_pic"></div>
+            </div>
+            <div class="user_columm">
+              <p class="user_nick">1:1 채팅방</p>
+              <p class="user_count"><em></em></p>
+            </div>
+          </div>
+        </section>
+        <div>
+          <ul class="chat-screen_texts">
+            <li class="text1">오늘 강의는 어땠니</li>
+            <li class="text2">많이 어려웠어</li>
+            <li class="text1">어떤 부분이 어려웠어?</li>
+            <li class="text2">실습하면서 만족스럽지않았어</li>
+            <li class="text1">잘 안 만들어졌어?</li>
+            <li class="text2">시간이 모자랐던거 같아</li>
+          </ul>
+        </div>
+      </main>
+      <div>
+        <div class="chat-form_field">
+          <hr />
+          <textarea class="chat-form_msg"></textarea>
+          <input type="submit" value="전송" class="chat-form_btn" />
+        </div>
+</div>
+
+  </body>
+</html>

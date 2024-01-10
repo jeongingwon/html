@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/info.css" rel="stylesheet" />
+    <link href="css/notice.css" rel="stylesheet" />
+    <link href="css/banner.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+
+    <title>INKWON MARKET</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 16px;
+      }
+      body {
+        margin: 0; /*body에 기본 설정된 margin제거*/
+      }
+
+      .flex {
+        /*flex-direction: row-reverse;*/
+        display: flex;
+      }
+      .main {
+        padding: 4rem 0 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!--헤더-->
+    <div class="container">
+      <header class="header">
+        <div class="header-content flex">
+          <!--flex container로 사용하기 위해 div 추가함-->
+          <div class="header-content_logo">INKWON MARKET</div>
+          <nav class="header-content_nav flex">
+            <!--menu 항목이 들어가 있는 navigation semantic tag-->
+            <ul>
+              <li>중고거래</li>
+              <li>동네가게</li>
+              <li class="active">알바</li>
+              <li>부동산 직거래</li>
+              <li>중고차 거래</li>
+            </ul>
+          </nav>
+          <div class="header-content_input flex">
+            <!--돋보기 아이콘 삽입-->
+            <span class="icon glass">
+              <input type="button" value="&#128269;" />
+            </span>
+            <span>
+              <input
+                type="text"
+                class="search"
+                placeholder="물품이나 동네를 검색해 보세요"
+              />
+            </span>
+
+            <!--햄버거 메뉴 아이콘 삽입-->
+            <span class="icon menu">
+              <input type="button" value="&#9776;" />
+            </span>
+            <span>
+              <input type="button" class="chat" value="채팅하기" />
+            </span>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
+
+<!--메인-->
+
+<!--맺음말 (footer)-->
