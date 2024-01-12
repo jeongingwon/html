@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문자열 및 widow.prompt()</title>
+  </head>
+  <body>
+    <script>
+      let apple;
+      apple = "사과";
+      console.log("사과");
+      console.log(apple);
+
+      let banana = "바나나";
+
+      console.log("사과" + "바나나");
+      //문자 + 문자 >> 문자가 연결됨
+      //문자열 안의 공백도 문자로 인식
+      console.log("사과" + "&" + "바나나");
+
+      console.log(apple + banana);
+
+      window.prompt("당신이 좋아하는과일은?");
+      //입력창이 뜸
+      //앞에 widow는 생략가능
+      let answer = prompt("당신이 좋아하는과일은?");
+      console.log(answer);
+      alert(answer);
+      //확인이 아닌 취소 클릭하면 >> null 반환
+      //const order = prompt("스패니쉬라떼 1잔 & 모카 2잔 주세요");
+      //alert(answer);
+      const prompttag = "당신이 좋아하는 사람은?";
+      let 답변 = alert(prompttag);
+      alert(답변);
+    </script>
+  </body>
+</html>
